@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="QATestlab" verbose="1" >
+
+    <test name="Create New Product [Google Chrome]" >
+
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+            <class name = "Lesson4Homework.tests.CreateProductTest" />
+        </classes>
+    </test>
+
+
+    <test name="Create New Product [Firefox]" >
+
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+            <class name = "Lesson4Homework.tests.CreateProductTest" />
+        </classes>
+    </test>
+
+    <test name="Create New Product [IE]" >
+
+        <parameter name="browser" value="ie"/>
+
+        <classes>
+            <class name = "Lesson4Homework.tests.CreateProductTest" />
+        </classes>
+    </test>
+
+
+
+    <!--Prepare test for firefox and IE browsers-->
+
+</suite>
